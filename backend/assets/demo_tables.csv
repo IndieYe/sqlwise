@@ -1,0 +1,8 @@
+TABLE_NAME,TABLE_COMMENT
+user,User Table
+product,Product Table
+category,Product Category Table
+order,Order Table
+order_item,Order Items Table
+payment,Payment Table
+address,User Address Table

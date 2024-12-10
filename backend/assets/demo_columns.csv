@@ -1,0 +1,58 @@
+TABLE_NAME,COLUMN_NAME,COLUMN_TYPE,COLUMN_COMMENT
+user,id,varchar(36),User ID
+user,username,varchar(50),Username
+user,password,varchar(100),Encrypted Password
+user,email,varchar(100),User Email
+user,phone,varchar(20),Phone Number
+user,created_at,timestamp,Account Creation Time
+user,updated_at,timestamp,Account Update Time
+user,status,smallint,Account Status: 1-Active 0-Inactive
+
+product,id,varchar(36),Product ID
+product,category_id,varchar(36),Category ID
+product,name,varchar(100),Product Name
+product,description,text,Product Description
+product,price,decimal(10;2),Product Price
+product,stock,int,Current Stock
+product,created_at,timestamp,Product Creation Time
+product,updated_at,timestamp,Product Update Time
+product,status,smallint,Product Status: 1-Active 0-Inactive
+
+category,id,varchar(36),Category ID
+category,name,varchar(50),Category Name
+category,parent_id,varchar(36),Parent Category ID
+category,description,text,Category Description
+category,created_at,timestamp,Category Creation Time
+
+order,id,varchar(36),Order ID
+order,user_id,varchar(36),User ID
+order,address_id,varchar(36),Delivery Address ID
+order,total_amount,decimal(10;2),Order Total Amount
+order,status,smallint,Order Status: 0-Pending 1-Paid 2-Shipped 3-Delivered 4-Cancelled
+order,created_at,timestamp,Order Creation Time
+order,updated_at,timestamp,Order Update Time
+
+order_item,id,varchar(36),Order Item ID
+order_item,order_id,varchar(36),Order ID
+order_item,product_id,varchar(36),Product ID
+order_item,quantity,int,Product Quantity
+order_item,price,decimal(10;2),Product Price at Order Time
+order_item,subtotal,decimal(10;2),Item Subtotal
+
+payment,id,varchar(36),Payment ID
+payment,order_id,varchar(36),Order ID
+payment,amount,decimal(10;2),Payment Amount
+payment,payment_method,varchar(20),Payment Method
+payment,status,smallint,Payment Status: 0-Pending 1-Success 2-Failed
+payment,created_at,timestamp,Payment Time
+payment,transaction_id,varchar(100),External Transaction ID
+
+address,id,varchar(36),Address ID
+address,user_id,varchar(36),User ID
+address,receiver_name,varchar(50),Receiver Name
+address,phone,varchar(20),Receiver Phone
+address,province,varchar(50),Province
+address,city,varchar(50),City
+address,district,varchar(50),District
+address,detail_address,varchar(200),Detailed Address
+address,is_default,smallint,Default Address Flag: 1-Yes 0-No

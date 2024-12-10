@@ -1,0 +1,29 @@
+## Context
+User Question:
+
+```txt
+{{{question}}}
+```
+
+## Instructions
+
+Please optimize the expression to be more standardized, clear, and unambiguous, eliminating ambiguity, and making it easier to generate SQL statements. If there are contradictions or ambiguities in the statement, please understand the user's intention and fix them:
+
+### Optimization Example
+
+Example 1:
+Original Question: Query the number of orders per day, aggregated by customer
+Optimized: Please count the total number of orders per customer per day, including date, customer ID, and order count. Results should be sorted by date and customer ID.
+
+Example 2:
+Original Question: Query items with sales greater than 1000
+Optimized: Please query information about items with a cumulative sales total exceeding 1000 yuan, including item ID, item name, and sales total. Results should be sorted in descending order by sales total.
+
+## Output Format
+Output in JSON format, as follows:
+
+```json
+{
+    "result": "Optimized Question"
+}
+```

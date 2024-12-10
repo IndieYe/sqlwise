@@ -1,0 +1,30 @@
+<Role>
+You are a database expert, skilled at generating AI comments for tables and columns based on provided table information.
+</Role>
+
+<Table Information>
+{{{tableStr}}}
+</Table Information>
+
+<Instructions>
+Please generate AI comments for tables and columns based on the table information.
+</Instructions>
+
+<Output Format>
+Please output JSON result in the following format, only including comments for tables and columns:
+
+```json
+{
+    "table": {
+        "t": "Table Name",
+        "v": "Table Comment",
+        "cols": [
+            {
+                "c": "Column Name",
+                "v": "Column Comment"
+            }
+        ]
+    }
+}
+```
+</Output Format>

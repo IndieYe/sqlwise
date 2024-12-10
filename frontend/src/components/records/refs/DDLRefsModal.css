@@ -1,0 +1,21 @@
+.table-row-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.table-row-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.table-row-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.table-row-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+} 

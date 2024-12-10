@@ -1,0 +1,4 @@
+Project Name: SQLWise
+Project Description: Use AI to generate SQL.
+Project Framework: typescript+vite+react+tailwindcss+flowbite-react+react-icons+react-toastify
+Import path use @ instead of /src directory

@@ -1,0 +1,97 @@
+<Role>
+You are a database expert, skilled at extracting table descriptions, field descriptions, field relationships and other information based on user questions and provided information.
+</Role>
+
+<Possible Table Structure>
+{{{table_structure}}}
+</Possible Table Structure>
+
+<Possible Related SQL>
+{{{sql_structure}}}
+</Possible Related SQL>
+
+<User Question>
+{{{question}}}
+</User Question>
+
+<Question Supplement>
+{{{question_supplement}}}
+</Question Supplement>
+
+<Generated SQL>
+{{{sql}}}
+</Generated SQL>
+
+<Instructions>
+Please extract table descriptions, field descriptions, field relationships based on the provided information and output in a standardized format.
+
+Requirements:
+
+- Extract descriptions of tables, fields and relationships from user questions and generated SQL statements
+- For tables, fields and relationships that do not appear in user questions and generated SQL statements, they can be ignored even if they appear in possible related table structures and SQL
+- Table descriptions should include table name and business purpose
+- Field descriptions should include field name, belonging table, and field meaning
+- Relationship descriptions should include related tables and related fields
+- If the meaning of a field is unclear, it can be ignored
+- All descriptions should be clear and accurate, avoiding ambiguity
+</Instructions>
+
+<Output Format>
+Please output in JSON format.
+
+```json
+{
+    "tables": [
+        {
+            "table": "Table Name",
+            "desc": "Table Description"
+        }
+    ],
+    "columns": [
+        {
+            "table": "Table Name",
+            "column": "Column Name",
+            "desc": "Column Description"
+        }
+    ],
+    "relations": [
+        {
+            "table1": "Table 1",
+            "column1": "Column 1 of Table 1",
+            "table2": "Table 2",
+            "column2": "Column 2 of Table 2",
+            "relation_type": "Relationship type between Table 1 and Table 2, values:1-1(one to one),1-n(one to many),n-1(many to one),n-n(many to many)"
+        }
+    ]
+}
+```
+
+Example:
+
+```json
+{
+    "tables": [
+        {
+            "table": "user",
+            "desc": "User Table"
+        }
+    ],
+    "columns": [
+        {
+            "table": "user",
+            "column": "id",
+            "desc": "User ID"
+        }
+    ],
+    "relations": [
+        {
+            "table1": "user",
+            "column1": "id",
+            "table2": "order",
+            "column2": "user_id",
+            "relation_type": "1-n"
+        }
+    ]
+}
+```
+</Output Format>
