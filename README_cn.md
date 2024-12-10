@@ -51,3 +51,24 @@
 
 ### 开发网址
 本地开发调试情况下，前端网址：`http://localhost:5173`
+
+## 截图
+### 项目列表页面
+![image](https://github.com/user-attachments/assets/f20f4bfd-8e21-435c-a195-088381ca8b97)
+
+### 项目页面
+![image](https://github.com/user-attachments/assets/e56e74ea-bf18-4bc4-bbdb-f36c158a3bbb)
+![image](https://github.com/user-attachments/assets/998ffe78-9f67-4c69-8c54-8164a9c2c938)
+![image](https://github.com/user-attachments/assets/e77129b5-c315-447d-b552-77e2da86a29d)
+
+### DDL页面
+![image](https://github.com/user-attachments/assets/9f8c3798-15ce-4f7b-bbb4-fabf07d39fc8)
+
+### 文档页面
+![image](https://github.com/user-attachments/assets/c06320d4-2670-4391-85b0-4db19d291e33)
+
+### 规则页面
+![image](https://github.com/user-attachments/assets/3d676c9e-8b33-4036-9d66-8975bcc1e0b9)
+
+### 设置页面
+![image](https://github.com/user-attachments/assets/9793426f-7bce-4a50-9f3b-ca94fcc87247)

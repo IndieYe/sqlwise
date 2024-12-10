@@ -51,3 +51,24 @@ Backend project depends on the following:
 
 ### Development URLs
 In local development mode, frontend URL: `http://localhost:5173`
+
+## Screenshots
+### Projects page
+![image](https://github.com/user-attachments/assets/f20f4bfd-8e21-435c-a195-088381ca8b97)
+
+### Project page
+![image](https://github.com/user-attachments/assets/e56e74ea-bf18-4bc4-bbdb-f36c158a3bbb)
+![image](https://github.com/user-attachments/assets/998ffe78-9f67-4c69-8c54-8164a9c2c938)
+![image](https://github.com/user-attachments/assets/e77129b5-c315-447d-b552-77e2da86a29d)
+
+### DDL page
+![image](https://github.com/user-attachments/assets/9f8c3798-15ce-4f7b-bbb4-fabf07d39fc8)
+
+### Document page
+![image](https://github.com/user-attachments/assets/c06320d4-2670-4391-85b0-4db19d291e33)
+
+### Rule page
+![image](https://github.com/user-attachments/assets/3d676c9e-8b33-4036-9d66-8975bcc1e0b9)
+
+### Settings page
+![image](https://github.com/user-attachments/assets/9793426f-7bce-4a50-9f3b-ca94fcc87247)
