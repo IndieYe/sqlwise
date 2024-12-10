@@ -38,6 +38,7 @@
 - 翻译，默认使用Azure Translator，可以自行修改配置，如果你使用的是英语，可以不用配置，否则非常推荐配置上，会大大提高向量数据库匹配的准确性
 
 ### 后端部署
+- 安装依赖: `pip install -r requirements.txt`
 - 本地开发调试：进入backend目录，`python app.py`
 - 线上部署：使用gunicorn部署，参考脚本`./start.sh`
 - Docker部署：
