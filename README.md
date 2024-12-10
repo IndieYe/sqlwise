@@ -25,7 +25,7 @@
 - 功能丰富且精细
 
 ## 使用
-### 项目结构说明
+### 项目结构
 - `backend`: 后端项目，使用python, flask框架
 - `frontend`: 前端项目，使用react，tailwindcss框架
 
