@@ -49,5 +49,5 @@
 - 本地开发调试：进入frontend目录，`npm run dev`开启开发调试，或者`npm run start`拉取后端接口重新生成接口定义并开启调试
 - 线上部署：使用vite打包，`npm run build`
 
-### 网址
+### 开发网址
 本地开发调试情况下，前端网址：`http://localhost:5173`
